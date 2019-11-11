@@ -4,11 +4,12 @@ import 'package:lumber/src/lumber.dart';
 
 extension LogString on String {
 
-  static Lumber lumber = Lumber.getInstance();
 
 
   /// Method is used to log errors
   void e() {
+    Lumber lumber = Lumber.getInstance();
+
     if (lumber.logEnable) {
        print("${DateTime.now()}\t${lumber.packageName} | ERROR |: $this");
        lumber.onErrorLog;
@@ -17,6 +18,8 @@ extension LogString on String {
 
   /// Method is used to log warnings
   void w() {
+    Lumber lumber = Lumber.getInstance();
+
    if (lumber.logEnable) {
        print("${DateTime.now()}\t${lumber.packageName} | WARN |: $this");
        lumber.onWarnLog;
@@ -25,6 +28,8 @@ extension LogString on String {
 
   /// Method is used to log informational messages
   void i() {
+    Lumber lumber = Lumber.getInstance();
+
     if (lumber.logEnable) {
        print("${DateTime.now()}\t${lumber.packageName} | INFO |: $this");
       lumber.onInfoLog;
@@ -33,7 +38,9 @@ extension LogString on String {
 
   /// Method is used to log debug messages
   void d(){
-if (lumber.logEnable) {
+    Lumber lumber = Lumber.getInstance();
+
+    if (lumber.logEnable) {
        print("${DateTime.now()}\t${lumber.packageName} | DEBUG |: $this");
        lumber.onDebugLog;
     }
@@ -41,6 +48,8 @@ if (lumber.logEnable) {
 
   /// Method is used to log verbose messages
   void v() {
+    Lumber lumber = Lumber.getInstance();
+
     if (lumber.logEnable) {
        print("${DateTime.now()}\t${lumber.packageName} | VERBOSE |: $this");
        lumber.onVerboseLog;
@@ -50,7 +59,9 @@ if (lumber.logEnable) {
 
   /// Method is used to log terrible failures that should never happen. ("WTF" stands for "What a Terrible Failure!" of course.)
   void wtf() {
-   if (lumber.logEnable) {
+    Lumber lumber = Lumber.getInstance();
+
+    if (lumber.logEnable) {
        print("${DateTime.now()}\t${lumber.packageName} | WTF |: $this");
        lumber.onWtfLog;
     }
