@@ -1,0 +1,17 @@
+name: lumber
+description: Flutter logger build on extension.
+version: 0.0.1
+author: <Kirill Adeshchenko> kaparrray@gmail.com
+homepage: https://github.com/FlutterRussia
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pedantic: ^1.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
