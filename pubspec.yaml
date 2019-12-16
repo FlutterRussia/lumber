@@ -1,12 +1,11 @@
 name: lumber
 description: Flutter logger build on extension. Written by the developers of the Arenum with love for you.
-version: 1.0.1
-author: Kirill Adeshchenko <kaparrray@gmail.com>
+version: 1.0.3
 homepage: https://github.com/FlutterRussia
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
-  flutter: ^1.12.13+hotfix.5
+  sdk: ">=2.6.0 <3.0.0"
+  flutter: ^1.12.13+hotfix.2
 
 dependencies:
   flutter:
