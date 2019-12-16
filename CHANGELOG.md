@@ -1,4 +1,4 @@
-## [1.0.0] - TODO: December/16/2019.
+## [1.0.1] - TODO: December/16/2019.
 
 * Update min sdk flutter and dart
 
